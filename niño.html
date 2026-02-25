@@ -9,7 +9,7 @@
 
 <body>
     <!-- Ficha de Inscripción: Datos del niño o niña -->
-    <table >
+    <table>
         <tr>
             <th colspan="4">Ficha de Inscripción</th>
         </tr>
@@ -33,10 +33,25 @@
             <td colspan="3"><input type="text" name="lugar_nacimiento" required maxlength="50"></td>
         </tr>
         <tr>
-            <td>Grado que ingresa:</td>
-            <td><input type="text" name="grado" required maxlength="20"></td>
-            <td>Sección:</td>
-            <td><input type="text" name="seccion" required maxlength="5"></td>
+            <td>
+                <label>Grado que ingresa</label>
+                <select name="" required>
+                    <option value="">Seleccione</option>
+                    <option value="">1°</option>
+                    <option value="">2°</option>
+                    <option value="">3°</option>
+                    <option value="">4°</option>
+                    <option value="">5°</option>
+                </select>
+            </td>
+            <td>
+                <label>Jornada</label>
+                <select name="jornada" required>
+                    <option value="">Seleccione</option>
+                    <option value="matutina">Diurna</option>
+                    <option value="vespertina">Nocturna</option>
+                </select>
+            </td>
         </tr>
         <tr>
             <td>Domicilio:</td>
