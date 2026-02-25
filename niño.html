@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Ficha de Inscripción: Datos del niño o niña -->
+    <table >
+        <tr>
+            <th colspan="4">Ficha de Inscripción</th>
+        </tr>
+        <tr>
+            <td>Nombre completo:</td>
+            <td colspan="3"><input type="text" name="nombre_completo" required maxlength="50"
+                    pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]{2,50}"></td>
+        </tr>
+        <tr>
+            <td>Edad:</td>
+            <td><input type="number" name="edad" min="1" max="18" required></td>
+            <td>Meses:</td>
+            <td><input type="number" name="meses" min="0" max="11" required></td>
+        </tr>
+        <tr>
+            <td>Fecha de nacimiento:</td>
+            <td colspan="3"><input type="date" name="fecha_nacimiento" required></td>
+        </tr>
+        <tr>
+            <td>Lugar de nacimiento:</td>
+            <td colspan="3"><input type="text" name="lugar_nacimiento" required maxlength="50"></td>
+        </tr>
+        <tr>
+            <td>Grado que ingresa:</td>
+            <td><input type="text" name="grado" required maxlength="20"></td>
+            <td>Sección:</td>
+            <td><input type="text" name="seccion" required maxlength="5"></td>
+        </tr>
+        <tr>
+            <td>Domicilio:</td>
+            <td colspan="3"><input type="text" name="domicilio" required maxlength="100"></td>
+        </tr>
+        <tr>
+            <td>Teléfonos:</td>
+            <td colspan="3"><input type="tel" name="telefonos" required pattern="[0-9\- ]{7,20}"></td>
+        </tr>
+    </table>
+</body>
+
+</html>

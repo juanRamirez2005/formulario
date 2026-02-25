@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Información Médica del niño o niña -->
+    <table>
+        <tr>
+            <th colspan="4">Información Médica del niño o niña</th>
+        </tr>
+        <tr>
+            <td>Tipo de Sangre:</td>
+            <td>
+                <select name="tipo_sangre" required>
+                    <option value="">Seleccione</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+            </td>
+            <td>Padece de asma:</td>
+            <td>
+                <select name="asma" required>
+                    <option value="">Seleccione</option>
+                    <option value="no">No</option>
+                    <option value="si">Sí</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Padece de convulsiones:</td>
+            <td>
+                <select name="convulsiones" required>
+                    <option value="">Seleccione</option>
+                    <option value="no">No</option>
+                    <option value="si">Sí</option>
+                </select>
+            </td>
+            <td>Otros:</td>
+            <td><input type="text" name="otros" maxlength="50"></td>
+        </tr>
+        <tr>
+            <td>Vacunas al día:</td>
+            <td colspan="3">
+                <select name="vacunas" required>
+                    <option value="">Seleccione</option>
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                </select>
+                (Presentar carnet)
+            </td>
+        </tr>
+        <tr>
+            <td>Alergias:</td>
+            <td colspan="3"><input type="text" name="alergias" maxlength="100"></td>
+        </tr>
+        <tr>
+            <td>Enfermedades Actuales:</td>
+            <td colspan="3"><input type="text" name="enfermedades" maxlength="100"></td>
+        </tr>
+        <tr>
+            <td>Toma medicamentos:</td>
+            <td colspan="3"><input type="text" name="medicamentos" maxlength="100"></td>
+        </tr>
+        <tr>
+            <td>Observaciones:</td>
+            <td colspan="3"><input type="text" name="observaciones" maxlength="150"></td>
+        </tr>
+    </table>
+</body>
+
+</html>

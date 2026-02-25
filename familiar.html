@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Información Familiar -->
+    <table>
+        <tr>
+            <th colspan="2">Madre</th>
+            <th colspan="2">Padre</th>
+        </tr>
+        <tr>
+            <td>Nombre:</td>
+            <td><input type="text" name="madre_nombre" required maxlength="50" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]{2,50}">
+            </td>
+            <td>Nombre:</td>
+            <td><input type="text" name="padre_nombre" required maxlength="50" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]{2,50}">
+            </td>
+        </tr>
+        <tr>
+            <td>Fecha de nacimiento:</td>
+            <td><input type="date" name="madre_fecha_nacimiento" required></td>
+            <td>Fecha de nacimiento:</td>
+            <td><input type="date" name="padre_fecha_nacimiento" required></td>
+        </tr>
+        <tr>
+            <td>Domicilio:</td>
+            <td><input type="text" name="madre_domicilio" required maxlength="100"></td>
+            <td>Domicilio:</td>
+            <td><input type="text" name="padre_domicilio" required maxlength="100"></td>
+        </tr>
+        <tr>
+            <td>Celular:</td>
+            <td><input type="tel" name="madre_celular" required pattern="[0-9\- ]{7,20}"></td>
+            <td>Celular:</td>
+            <td><input type="tel" name="padre_celular" required pattern="[0-9\- ]{7,20}"></td>
+        </tr>
+        <tr>
+            <td>Ocupación:</td>
+            <td><input type="text" name="madre_ocupacion" required maxlength="30"></td>
+            <td>Ocupación:</td>
+            <td><input type="text" name="padre_ocupacion" required maxlength="30"></td>
+        </tr>
+        <tr>
+            <td>Lugar de trabajo:</td>
+            <td><input type="text" name="madre_lugar_trabajo" maxlength="50"></td>
+            <td>Lugar de trabajo:</td>
+            <td><input type="text" name="padre_lugar_trabajo" maxlength="50"></td>
+        </tr>
+        <tr>
+            <td>Teléfono de trabajo:</td>
+            <td><input type="tel" name="madre_telefono_trabajo" pattern="[0-9\- ]{7,20}"></td>
+            <td>Teléfono de trabajo:</td>
+            <td><input type="tel" name="padre_telefono_trabajo" pattern="[0-9\- ]{7,20}"></td>
+        </tr>
+        <tr>
+            <th colspan="4">Situación Familiar</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <label><input type="radio" name="situacion_familiar" value="casados" required> Casados</label>
+                <label><input type="radio" name="situacion_familiar" value="unidos"> Unidos</label>
+                <label><input type="radio" name="situacion_familiar" value="separados"> Separados</label>
+                <label><input type="radio" name="situacion_familiar" value="divorciados"> Divorciados</label>
+                <label><input type="radio" name="situacion_familiar" value="unico"> Único</label>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
